@@ -12,7 +12,7 @@
         </div>
       </li>
     </ul>
-  </div> 
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
   props: {
     list: Array
   }
- } 
+}
 </script>
 
 <style lang="stylus" scoped>
