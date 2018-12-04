@@ -1,4 +1,4 @@
-<template> 
+<template>
   <ul class="list">
     <li class="item" v-for="item of letters" :key="item" :ref="item" @touchstart="handleTouchStart" @touchmove="handleTouchMove" @touchend="handleTouchEnd" @click="handleLetterClick">
       {{item}}
@@ -44,7 +44,7 @@ export default {
           clearTimeout(this.timer)
         }
         this.timer = setTimeout(() => {
-          const touchY = e.touches[0].clientY- 157
+          const touchY = e.touches[0].clientY - 157
           const index = Math.floor((touchY - this.startY) / 20)
           if (index >= 0 && index < this.letters.length) {
             this.$emit('change', this.letters[index])
