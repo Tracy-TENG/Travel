@@ -86,7 +86,7 @@ export default {
     z-index: 1
     overflow: hidden
     position: absolute
-    top: 2.78rem
+    top: 1.58rem
     left: 0
     right: 0
     bottom: 0
